@@ -27,8 +27,8 @@ function App() {
       <div className="pt-4">
         <Card className="shadow-lg">
           <CardHeader>
-            <div className="flex justify-between">
-              <span>
+            <div className="flex justify-between ">
+              <span className="text-sm tracking-tighter md:text-lg">
                 As on{" "}
                 {new Date().toLocaleDateString("en-IN", {
                   day: "numeric",
@@ -39,7 +39,9 @@ function App() {
               <div className="flex flex-wrap gap-2">
                 <Badge variant={"secondary"}>Open IPO's(2)</Badge>
                 <Badge variant={"secondary"}>Upcoming IPO's(2)</Badge>
-                <Badge variant={"secondary"}>Closed IPO's(79)</Badge>
+                <Badge className="hidden md:flex" variant={"secondary"}>
+                  Closed IPO's(79)
+                </Badge>
               </div>
             </div>
           </CardHeader>
