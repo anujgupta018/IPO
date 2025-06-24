@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="sticky top-0 z-50 md:backdrop-blur">
+    <div className="sticky top-0 z-50 md:backdrop-blur-sm">
       <nav
-        className=" w-full backdrop-blur
+        className=" w-full 
        justify-between items-center p-4 hidden md:flex shadow-md rounded-b-md pt-4"
       >
         <div className="flex gap-4">
@@ -22,11 +22,17 @@ const Navbar = () => {
           <li>IPO Glossary</li>
           <li>Message Board</li>
         </ul>
-        <Button variant={"secondary"} className="bg-purple-600 text-white hover:bg-purple-800 hover:text-white">
+        <Button
+          variant={"secondary"}
+          className="bg-purple-600 text-white hover:bg-purple-800 hover:text-white"
+        >
           Login
         </Button>
       </nav>
-      <div className="md:hidden flex items-center justify-between p-4 bg-white">
+
+      {/* {MObile nav} */}
+
+      <div className="backdrop-blur sticky md:hidden flex items-center justify-between p-4 bg-white">
         <div className="flex gap-2 items-center">
           <Bomb className="h-5 w-5 text-purple-500" />
           <span className="tracking-tighter font-bold">IPO</span>
@@ -36,7 +42,6 @@ const Navbar = () => {
         </Button>
       </div>
 
-      {/* {MObile nav} */}
       <div>
         <div
           className={cn(

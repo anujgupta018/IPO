@@ -172,21 +172,23 @@ function App() {
                           year: "numeric",
                         })}{" "}
                       </TableCell>
-                      <TableCell>200-210</TableCell>
-                      <TableCell>
+                      <TableCell className="text-muted-foreground">
+                        200-210
+                      </TableCell>
+                      <TableCell className="text-muted-foreground">
                         {new Date().toLocaleString("en-IN", {
                           day: "numeric",
                           month: "long",
                         })}
                       </TableCell>
                       <TableCell> </TableCell>
-                      <TableCell>
+                      <TableCell className="text-muted-foreground">
                         {new Date().toLocaleString("en-IN", {
                           day: "numeric",
                           month: "long",
                         })}
                       </TableCell>
-                      <TableCell>
+                      <TableCell className="text-muted-foreground">
                         {new Date().toLocaleString("en-IN", {
                           month: "long",
                           year: "numeric",
